@@ -2,9 +2,7 @@
 
 namespace Maba\Component\Monetary\Validation;
 
-use Maba\Component\Math\Exception\InvalidNumberException;
 use Maba\Component\Math\MathInterface;
-use Maba\Component\Math\NumberValidatorInterface;
 use Maba\Component\Monetary\Exception\InvalidAmountException;
 use Maba\Component\Monetary\Exception\InvalidCurrencyException;
 use Maba\Component\Monetary\Information\MoneyInformationProviderInterface;

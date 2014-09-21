@@ -2,7 +2,6 @@
 
 namespace Maba\Component\Monetary\Tests;
 
-use Maba\Component\Math\Exception\InvalidNumberException;
 use Maba\Component\Math\MathInterface;
 use Maba\Component\Monetary\Exception\InvalidAmountException;
 use Maba\Component\Monetary\Information\MoneyInformationProviderInterface;
