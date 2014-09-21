@@ -1,0 +1,27 @@
+{
+    "name": "maba/monetary",
+    "description": "PHP library for money operations",
+    "keywords": ["money", "money calculations", "monetary", "money operations"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marius Balčytis",
+            "email": "marius.balcytis@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "maba/math": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": { "Maba\\Component\\Monetary\\": "" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.9.x-dev"
+        }
+    }
+}
