@@ -140,6 +140,7 @@ if ($calculator->isGt($result, $factory->createZero())) {
 ## Running tests
 
 [![Travis status](https://travis-ci.org/mariusbalcytis/monetary.svg?branch=master)](https://travis-ci.org/mariusbalcytis/monetary)
+[![Coverage Status](https://coveralls.io/repos/mariusbalcytis/monetary/badge.svg?branch=master&service=github)](https://coveralls.io/github/mariusbalcytis/monetary?branch=master)
 
 ```
 composer install
