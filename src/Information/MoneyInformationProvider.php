@@ -67,6 +67,7 @@ class MoneyInformationProvider implements MoneyInformationProviderInterface
         'BSD',
         'BTN',
         'BWP',
+        'BYN',
         'BYR',
         'BZD',
         'CAD',
