@@ -199,6 +199,7 @@ class MoneyInformationProvider implements MoneyInformationProviderInterface
         'UYU',
         'UZS',
         'VEF',
+        'VES',
         'VND',
         'VUV',
         'WST',
