@@ -13,7 +13,7 @@ class MoneyInformationProvider implements MoneyInformationProviderInterface
 {
     const DEFAULT_PRECISION = 2;
 
-    static protected $defaultCurrencyPrecisions = array (
+    static protected $defaultCurrencyPrecisions = array(
         'BHD' => 3,
         'BIF' => 0,
         'BYR' => 0,
@@ -238,4 +238,12 @@ class MoneyInformationProvider implements MoneyInformationProviderInterface
         return $this->availableCurrencies;
     }
 
-} 
+    public function addAvailableCurrencies(array $availableCurrencies, array $currencyPrecisions = null)
+    {
+        $this->currencyPrecisions = $currencyPrecisions !== null
+            ? array_replace($this->currencyPrecisions, $currencyPrecisions)
+            : $this->currencyPrecisions
+        ;
+        $this->availableCurrencies = array_unique(array_merge($this->availableCurrencies, $availableCurrencies));
+    }
+}
