@@ -22,5 +22,8 @@
             "Maba\\Component\\Monetary\\": "src",
             "Maba\\Component\\Monetary\\Tests\\": "test"
         }
+    },
+    "config": {
+        "bin-dir": "bin"
     }
 }

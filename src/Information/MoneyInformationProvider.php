@@ -40,10 +40,6 @@ class MoneyInformationProvider implements MoneyInformationProviderInterface
         'XAF' => 0,
         'XOF' => 0,
         'XPF' => 0,
-
-        'XAU' => 6,
-        'XAG' => 4,
-        'XPT' => 6,
     );
 
     static protected $defaultAvailableCurrencies = array(
@@ -215,10 +211,6 @@ class MoneyInformationProvider implements MoneyInformationProviderInterface
         'ZAR',
         'ZMW',
         'ZWL',
-
-        'XAU',
-        'XAG',
-        'XPT',
     );
 
     protected $currencyPrecisions;
@@ -244,5 +236,14 @@ class MoneyInformationProvider implements MoneyInformationProviderInterface
     public function getSupportedCurrencies()
     {
         return $this->availableCurrencies;
+    }
+
+    public function addAvailableCurrencies(array $availableCurrencies, array $currencyPrecisions = null)
+    {
+        $this->currencyPrecisions = $currencyPrecisions !== null
+            ? array_replace($this->currencyPrecisions, $currencyPrecisions)
+            : $this->currencyPrecisions
+        ;
+        $this->availableCurrencies = array_unique(array_merge($this->availableCurrencies, $availableCurrencies));
     }
 }
