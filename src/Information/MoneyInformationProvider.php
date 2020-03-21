@@ -13,7 +13,7 @@ class MoneyInformationProvider implements MoneyInformationProviderInterface
 {
     const DEFAULT_PRECISION = 2;
 
-    static protected $defaultCurrencyPrecisions = array (
+    static protected $defaultCurrencyPrecisions = array(
         'BHD' => 3,
         'BIF' => 0,
         'BYR' => 0,
@@ -40,6 +40,10 @@ class MoneyInformationProvider implements MoneyInformationProviderInterface
         'XAF' => 0,
         'XOF' => 0,
         'XPF' => 0,
+
+        'XAU' => 6,
+        'XAG' => 4,
+        'XPT' => 6,
     );
 
     static protected $defaultAvailableCurrencies = array(
@@ -211,6 +215,10 @@ class MoneyInformationProvider implements MoneyInformationProviderInterface
         'ZAR',
         'ZMW',
         'ZWL',
+
+        'XAU',
+        'XAG',
+        'XPT',
     );
 
     protected $currencyPrecisions;
@@ -237,5 +245,4 @@ class MoneyInformationProvider implements MoneyInformationProviderInterface
     {
         return $this->availableCurrencies;
     }
-
-} 
+}
